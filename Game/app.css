@@ -1,0 +1,84 @@
+.main {
+  max-width: 600px;
+	margin: 20px auto;
+	display: block;
+	height: 400px;
+	max-height: 1000px;
+}
+body{
+  background: #4CB8C4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4CB8C4 , #3CD3AD); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4CB8C4 , #3CD3AD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: Raleway;
+}
+
+.content{
+  padding-top: 1em;
+  display: block;
+  height: 70%;
+}
+
+.option {
+  margin: 0px;
+  width: 270px;
+  float: left;
+  border: 1px #0455bf solid;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 1em;
+  display: block;
+}
+
+.option:hover, .option:active {
+  background: #0455bf;
+  color: white;
+  cursor:pointer;
+}
+
+#header{
+  height: 30%;
+  font-size: 2em;
+  text-align: center;
+  margin: 1em;;
+}
+
+p span{
+  font-size: 0.9em;
+}
+p{
+  margin: 0.5em;
+}
+
+#reset {
+  display: block;
+  margin: 0px auto;
+  border: 0.1em #4CAF50 solid; /* Green */
+  background-color: inherit;
+  color: black;
+  padding: 1em 2em;
+  font-size: 16px;
+  border-radius: 0.2em;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+#reset:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.correct{
+  background-color: #4CAF50;
+  color: white;
+}
+
+.wrong{
+  background-color: #f44336;
+  color: white;
+}
+
+#percentage {
+  font-size: 0.9em;
+  text-align: right;
+}
