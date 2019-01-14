@@ -3,6 +3,7 @@ html, body{
   height: 100%;
   width: 100%;
   color: #71C7EC;
+  min-width: 1024px;
 }
 
 #main{
