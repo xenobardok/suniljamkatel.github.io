@@ -99,6 +99,25 @@ section#testimonials{
   width: 100%;
   z-index: 1;
 }
+
+.third-tilt {
+  position: relative;
+}
+.third-tilt::before {
+  position: absolute;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' viewBox='0 0 100 120' fill='rgb(34,42,48)' fill-opacity='1'%3E%3Cpolygon points='0,120 100,120 0,0'%3E%3C/polygon%3E%3C/svg%3E");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: '';
+  height: 120px;
+  top: -120px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
 .parent{
 padding: 50px;
  display: -webkit-box;
@@ -112,6 +131,8 @@ padding: 50px;
      -ms-flex-pack: center;
          justify-content: center;
 }
+
+
 
 .item {
   width: 90%;
@@ -238,13 +259,95 @@ i{
   height: 200px;
 }
 
-#testimonials h2 {
-  padding: 200px 0px 0px 0px;
+#testimonials .container {
+  padding: 200px 0px 200px 0px;
 
   color: #222a30;
   text-shadow: 0px 4px 3px rgba(255,255,255,0.4), 0px 8px 13px rgba(255,255,255,0.1), 0px 18px 23px rgba(255,255,255,0.1);
 
 }
+
+#social .container {
+  padding: 100px 0px;
+
+}
+#social h2, #social p {
+  text-align: center;
+}
+
+#social {
+  height: 500px;
+}
+
+#socialRow i{
+  font-size: 5em;
+}
+#socialRow{
+  text-align: center;
+}
+
+#socialRow .col {
+  padding: 20px;
+}
+
+.socialRow i:hover{
+  text-shadow: 0px 4px 3px rgba(255,255,255,0.4), 0px 8px 13px rgba(255,255,255,0.1), 0px 18px 23px rgba(255,255,255,0.1);
+
+}
+
+/* hover colors for icons */
+.fa-facebook-square:hover, .fa-twitter:hover, .fa-instagram:hover,.fa-youtube:hover, .fa-linkedin:hover, .fa-github:hover{
+  text-shadow: 3px 4px 3px rgba(255,255,255,0.6), 10px 8px 13px rgba(255,255,255,0.1), 5px 18px 23px rgba(255,255,255,0.1)
+
+}
+
+.fa-facebook-square:hover{
+  color: #3b5998;
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+}
+
+.fa-instagram:hover{
+  color:#bc2a8d;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+.fa-linkedin:hover {
+  color: #007bb5;
+}
+
+.fa-github:hover {
+  color: #000000;
+}
+/* Shake animatio for youtube  */
+
+
+.fa-youtube {
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+/* End of shake animation for youtube */
 /* Scroll down code */
 
 @import url(https://fonts.googleapis.com/css?family=Cabin);
