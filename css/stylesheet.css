@@ -4,6 +4,7 @@ html, body{
   width: 100%;
   color: #71C7EC;
   min-width: 1024px;
+  scroll-behavior: smooth;
 }
 
 #main{
@@ -53,6 +54,7 @@ button {
 }
 
 button:hover {
+  box-shadow: 3px 4px 3px rgba(0,0,0,0.6), 10px 8px 13px rgba(0,0,0,0.1), 5px 18px 23px rgba(255,255,255,0.1);
   background-color: rgba(0, 80, 115, 1);
   cursor: pointer;
 }
@@ -259,16 +261,19 @@ i{
   height: 200px;
 }
 
+#testimonials .carousel-item{
+  text-shadow: 0px 4px 3px rgba(255,255,255,0.4), 0px 8px 13px rgba(255,255,255,0.1), 0px 18px 23px rgba(255,255,255,0.1);
+
+}
 #testimonials .container {
   padding: 200px 0px 200px 0px;
 
   color: #222a30;
-  text-shadow: 0px 4px 3px rgba(255,255,255,0.4), 0px 8px 13px rgba(255,255,255,0.1), 0px 18px 23px rgba(255,255,255,0.1);
 
 }
 
 #social .container {
-  padding: 100px 0px;
+  padding: 80px 0px;
 
 }
 #social h2, #social p {
@@ -276,7 +281,7 @@ i{
 }
 
 #social {
-  height: 500px;
+  /* height: 500px; */
 }
 
 #socialRow i{
@@ -295,6 +300,20 @@ i{
 
 }
 
+footer {
+  text-shadow: 0px 4px 3px rgba(255,255,255,0.4), 0px 8px 13px rgba(255,255,255,0.1), 0px 18px 23px rgba(255,255,255,0.1);
+
+  height: 100px;
+  background-image: -webkit-radial-gradient(circle,#1EBBD7, #189AD3, #2c3e50 );
+  background-image: -o-radial-gradient(circle,#1EBBD7, #189AD3, #2c3e50 );
+  background-image: radial-gradient(circle,#1EBBD7, #189AD3, #2c3e50 );
+  background-color: #2c3e50;  /* fallback for old browsers */
+}
+footer h3{
+  color: #222a30;
+  padding-top: 35px;
+  text-align: center;
+}
 /* hover colors for icons */
 .fa-facebook-square:hover, .fa-twitter:hover, .fa-instagram:hover,.fa-youtube:hover, .fa-linkedin:hover, .fa-github:hover{
   text-shadow: 3px 4px 3px rgba(255,255,255,0.6), 10px 8px 13px rgba(255,255,255,0.1), 5px 18px 23px rgba(255,255,255,0.1)
