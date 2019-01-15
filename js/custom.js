@@ -4,3 +4,7 @@ $(".typed").typed({
 	    	backDelay: 1000,
 	    	loop:true
 		});
+
+$('.carousel').carousel({
+			interval: 7000
+		  })
