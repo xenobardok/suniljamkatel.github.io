@@ -33,7 +33,7 @@ body {
 #main .sunil {
   background-image: url('../main.svg');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right;
   height: 100%;
 }
 
